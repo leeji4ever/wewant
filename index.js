@@ -1,7 +1,7 @@
 const express = require('express'); 
 const app = express(); 
 const path = require('path'); 
-const session = require('express-session')
+//const session = require('express-session')
 
 app.use(express.static(__dirname + '/public'));
 // Setting EJS as the view engine
@@ -26,6 +26,6 @@ app.use('/views',express.static(__dirname +'/views'));
 
 
 //Server is listening on port 5000
-app.listen(5000, () => {
-    console.log(`App listening at port 5000`);
+app.listen(3000, () => {
+    console.log(`App listening at port 3000`);
   })
